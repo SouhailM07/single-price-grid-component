@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #JoinUs {
+    @apply pl-[3rem] py-[3rem] border-2 border-red-500 max-w-[50rem];
+  }
+  #JoinUs h1 {
+    @apply text-Cyan text-[2.19rem] font-medium mb-[1.2rem];
+  }
+  #JoinUs h3 {
+    @apply text-BrightYellow text-[1.5rem] font-medium mb-[1rem];
+    word-spacing: 3px;
+  }
+  #JoinUs p {
+    @apply text-GrayishBlue text-[1.4rem];
+  }
+}
