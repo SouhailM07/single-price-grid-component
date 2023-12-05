@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #MonthSub {
+    @apply w-[100%] bg-Cyan text-white flex justify-center items-center rounded-bl-lg;
+  }
+  #MonthSub-box {
+    @apply flex flex-col h-[15rem] justify-between;
+  }
+  #MonthSub-box h3 {
+    @apply text-[1.5rem] font-medium;
+  }
+  #MonthSub-box button {
+    @apply bg-BrightYellow h-[3rem] mt-[1rem] rounded-md font-medium shadow-xl;
+  }
+  @media screen and (max-width: 600px) {
+    #MonthSub {
+      @apply rounded-none pt-[1rem];
+    }
+  }
+}

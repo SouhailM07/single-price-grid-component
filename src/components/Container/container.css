@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #container {
+    @apply w-[55rem] h-[38rem]  shadow-2xl;
+  }
+
+  @media screen and (max-width: 815px) {
+    #container {
+      @apply w-[90vw];
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    #container div {
+      @apply flex-wrap;
+    }
+    #JoinUs ~ div,
+    #WhyUs ~ div {
+      @apply h-[35rem];
+    }
+  }
+}

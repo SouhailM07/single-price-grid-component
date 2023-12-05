@@ -1,13 +1,17 @@
 // style
-
+import "./container.css";
 // components
-import { JoinUs } from "../../components";
+import { JoinUs, MonthSub, WhyUs } from "../../components";
 
 export default function Container() {
   return (
     <>
-      <div className="border-2 border-black w-[55rem] h-[40rem] ">
+      <div id="container">
         <JoinUs />
+        <div className="flex h-[55%]">
+          <MonthSub />
+          <WhyUs />
+        </div>
       </div>
     </>
   );

@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  #WhyUs {
+    @apply w-[100%] bg-Cyan text-white flex justify-center items-center rounded-br-lg;
+  }
+  #WhyUs-box {
+    @apply h-[15rem] flex flex-col justify-between;
+  }
+  #WhyUs-box h2 {
+    @apply text-[1.4rem] font-medium;
+  }
+  #WhyUs-box ul li {
+    @apply my-[0.2rem];
+  }
+
+  @media screen and (max-width: 600px) {
+    #WhyUs {
+      @apply rounded-bl-lg;
+    }
+  }
+}
